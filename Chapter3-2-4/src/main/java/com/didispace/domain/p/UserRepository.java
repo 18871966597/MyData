@@ -11,7 +11,7 @@ import org.springframework.data.repository.query.Param;
  * @date 16/3/23 下午2:34.
  * @blog http://blog.didispace.com
  */
-public interface UserRepository extends JpaRepository<User, Long> {
+public interface UserRepository extends JpaRepository<User_test, Long> {
 
 
 }

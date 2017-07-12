@@ -1,6 +1,6 @@
 package com.didispace;
 
-import com.didispace.domain.p.User;
+import com.didispace.domain.p.User_test;
 import com.didispace.domain.p.UserRepository;
 import com.didispace.domain.s.Message;
 import com.didispace.domain.s.MessageRepository;
@@ -29,11 +29,11 @@ public class ApplicationTests {
 	@Test
 	public void test() throws Exception {
 
-		userRepository.save(new User(1,"aaa", 10));
-		userRepository.save(new User(2,"bbb", 20));
-		userRepository.save(new User(3,"ccc", 30));
-		userRepository.save(new User(4,"ddd", 40));
-		userRepository.save(new User(5,"eee", 50));
+		userRepository.save(new User_test(1,"aaa", 10));
+		userRepository.save(new User_test(2,"bbb", 20));
+		userRepository.save(new User_test(3,"ccc", 30));
+		userRepository.save(new User_test(4,"ddd", 40));
+		userRepository.save(new User_test(5,"eee", 50));
 		Assert.assertEquals(5, userRepository.findAll().size());
 
 		messageRepository.save(new Message("o1", "aaaaaaaaaa"));
